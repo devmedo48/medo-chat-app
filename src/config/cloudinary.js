@@ -11,5 +11,6 @@ export default async function uploadImage(image) {
     body: data,
   });
   let imageUrl = await res.json();
+  console.log(imageUrl);
   return imageUrl.url;
 }
